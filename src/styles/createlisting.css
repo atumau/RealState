@@ -1,0 +1,131 @@
+/* class1 - container for the listing creation */
+.class1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    size: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(237, 205, 246);
+  }
+  
+  /* class2 - header with dark background */
+  .class2 {
+    background-color: #f1710f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* class3 - form container with light background */
+  .class3 {
+    background-color: #f1eef4;
+    padding: 20px;
+  }
+  
+  /* fg1 - form group for type radio buttons */
+  .fg1 {
+    margin-bottom: 20px;
+  }
+  
+  /* fc1 and fc2 - radio buttons */
+  .fc1,
+  .fc2 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  /* fc1 input and fc2 input - radio button input */
+  .fci1,
+  .fci2 {
+    margin-top: 3px;
+  }
+  
+  /* fcl1 and fcl2 - radio button labels */
+  .fcl1,
+  .fcl2 {
+    margin-left: 5px;
+  }
+  
+  /* fg2 and fg3 - form groups for address and latitude */
+  .fg2,
+  .fg3 {
+    margin-bottom: 20px;
+  }
+  
+  /* fg4 - form group for longitude and images */
+  .fg4 {
+    margin-bottom: 20px;
+  }
+  
+  /* fg4 label - images label */
+  .fg4 label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* htji - wrapper for the submit button */
+  .htji {
+    margin-bottom: 10px;
+  }
+  
+  /* bton - submit button style */
+  .bton {
+    background-color: #f553af;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* bton:disabled - style for disabled submit button */
+  .bton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Additional styles */
+  
+  /* Increase the size of the header */
+  .class2 {
+    font-size: 24px;
+  }
+  
+  /* Style the address input field */
+  .fc3 {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Style the latitude and longitude input fields */
+  .fc4,
+  .fc5 {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Style the images input field */
+  .fc6 {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Style the radio button labels */
+  .fcl1,
+  .fcl2 {
+    font-weight: bold;
+  }
+  
+  /* Hover effect on the submit button */
+  .bton:hover {
+    background-color: #4f7af1;
+  }
+  

@@ -1,0 +1,121 @@
+/* class1 - container for the listing update */
+.class1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* class2 - header with dark background */
+  .class2 {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* class3 - form container with light background */
+  .class3 {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* class4 - form group for type radio buttons */
+  .class4 {
+    margin-bottom: 20px;
+  }
+  
+  /* class5 - container for radio buttons */
+  .class5 {
+    display: flex;
+  }
+  
+  /* class6 and class9 - radio buttons */
+  .class6,
+  .class9 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  /* class7 and class10 - radio button inputs */
+  .class7,
+  .class10 {
+    margin-top: 3px;
+  }
+  
+  /* class8 and class11 - radio button labels */
+  .class8,
+  .class11 {
+    margin-left: 5px;
+  }
+  
+  /* class12 and class13 - form groups for address and latitude */
+  .class12,
+  .class13 {
+    margin-bottom: 20px;
+  }
+  
+  /* class15 - form group for longitude */
+  .class15 {
+    margin-bottom: 20px;
+  }
+  
+  /* class17 - form group for images */
+  .class17 {
+    margin-bottom: 20px;
+  }
+  
+  /* class19 - wrapper for the submit button */
+  .class19 {
+    margin-bottom: 10px;
+  }
+  
+  /* class20 - submit button style */
+  .class20 {
+    background-color: #f553af;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Additional styles */
+  
+  /* Increase the size of the header */
+  .class2 {
+    font-size: 24px;
+  }
+  
+  /* Style the address input field */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Style the latitude and longitude input fields */
+  .class14,
+  .class16 {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Style the images input field */
+  .class18 {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Hover effect on the submit button */
+  .class20:hover {
+    background-color: #0056b3;
+  }
+  
