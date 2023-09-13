@@ -20,22 +20,22 @@ const Footer = () => {
       <h6>All Right Reserved &copy; atulTech - 2023</h6>
       <div className="d-flex flex-row p-2">
         <p className="me-4" title="Github">
-          <Link to="/">
+          <Link to="https://github.com/">
             <BsGithub color="rgba" size={30} />
           </Link>
         </p>
         <p className="me-4" title="Instagram">
-          <Link to="/">
+          <Link to="https://www.instagram.com/">
             <BsInstagram color="rgba" size={30} />
           </Link>
         </p>
         <p className="me-4" title="Telegram">
-          <Link to="/">
+          <Link to="https://t.me/+lLmvjxG26fgyYWE1">
             <BsTelegram color="rgba" size={30} />
           </Link>
         </p>
         <p className="me-4" title="Youtube">
-          <Link to="/">
+          <Link to="https://www.youtube.com/">
             <BsYoutube color="rgba" size={30} />
           </Link>
         </p>

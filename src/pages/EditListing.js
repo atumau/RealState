@@ -14,8 +14,6 @@ import {
 } from "firebase/storage";
 import { db } from "../firebase.config";
 import {
-  addDoc,
-  collection,
   serverTimestamp,
   doc,
   updateDoc,
@@ -27,7 +25,6 @@ const EditListing = () => {
   const [loading, setLoading] = useState(false);
   const [listing, setListing] = useState(null);
   const params = useParams();
-  const [geoLocationEnable, setGeoLocationEnable] = useState(false);
   const [formData, setFormData] = useState({
     type: "rent",
     name: "",

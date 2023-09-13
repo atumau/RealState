@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
-import { getDoc, doc, getDocs } from "firebase/firestore";
+import { getDoc, doc} from "firebase/firestore";
 import { db } from "../firebase.config";
 import { getAuth } from "firebase/auth";
 import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Spinner from "../components/Spinner";
-import SwipeCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
+import SwipeCore, { EffectCoverflow,Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -34,7 +34,6 @@ const Listing = () => {
       const docRef = doc(db, "listings", params.listingId);
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
-        console.log(docSnap.data());
         setListing(docSnap.data());
         setLoading(false);
       }

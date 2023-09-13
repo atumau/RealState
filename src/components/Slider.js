@@ -3,14 +3,13 @@ import "../styles/slider.css";
 import { db } from "../firebase.config";
 import {
   collection,
-  getDoc,
   query,
   orderBy,
   limit,
   getDocs,
 } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import SwipeCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
+import SwipeCore, { EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -24,8 +23,7 @@ const Slider = () => {
   const [listings, setListings] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const userPic =
-    "https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png";
+  
 
   useEffect(() => {
     const fetchListing = async () => {

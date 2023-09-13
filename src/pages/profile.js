@@ -36,7 +36,6 @@ const Profile = () => {
         orderBy("timestamp", "desc")
       );
       const querySnap = await getDocs(q);
-      console.log(querySnap);
       let listings = [];
       querySnap.forEach((doc) => {
         return listings.push({
@@ -44,7 +43,7 @@ const Profile = () => {
           data: doc.data(),
         });
       });
-      console.log(listings);
+      
       setListings(listings);
       setLoading(false);
     };

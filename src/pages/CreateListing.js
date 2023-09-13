@@ -21,7 +21,6 @@ import "../styles/createlisting.css";
 
 const CreateListing = () => {
   const [loading, setLoading] = useState(false);
-  const [geoLocationEnable, setGeoLocationEnable] = useState(false);
   const [formData, setFormData] = useState({
     type: "rent",
     name: "",
@@ -99,9 +98,6 @@ const CreateListing = () => {
     }
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-  };
 
   const storeImage = async (image) => {
     return new Promise((resolve, reject) => {
@@ -112,14 +108,7 @@ const CreateListing = () => {
       uploadTask.on(
         "state_changed",
         (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          switch (snapshot.state) {
-            case "paused":
-              break;
-            case "running":
-              break;
-          }
+          
         },
         (error) => {
           reject(error);

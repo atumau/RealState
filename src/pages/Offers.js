@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
-import { useParams } from "react-router-dom";
 import { db } from "../firebase.config";
 import { toast } from "react-toastify";
 import {
@@ -21,7 +20,6 @@ const Offers = () => {
     const [listing, setListing] = useState("");
     const [lastFetchListing,setLastFetchListing]=useState(null)
     const [loading, setLoading] = useState(true);
-    const params = useParams();
   
     //fetch listing//
     useEffect(() => {
