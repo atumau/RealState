@@ -23,7 +23,7 @@ import "../styles/editlisting.css";
 
 const EditListing = () => {
   const [loading, setLoading] = useState(false);
-  const [listing, setListing] = useState(null);
+  const [, setListing] = useState(null);
   const params = useParams();
   const [formData, setFormData] = useState({
     type: "rent",
@@ -134,8 +134,6 @@ const EditListing = () => {
       uploadTask.on(
         "state_changed",
         (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           switch (snapshot.state) {
             case "paused":
               break;

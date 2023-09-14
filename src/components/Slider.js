@@ -9,15 +9,18 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import SwipeCore, { EffectCoverflow, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
-import Spinner from "./Spinner";
-import {ImLocation2} from 'react-icons/im';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// config
-SwipeCore.use([EffectCoverflow, Pagination]);
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import 'swiper/swiper-bundle.min.css';
+import "swiper/swiper.min.css"; 
+import Spinner from "./Spinner";
+import { ImLocation2 } from "react-icons/im";
+
+// Configure Swiper
+SwiperCore.use([EffectCoverflow, Pagination]);
+
+
 
 const Slider = () => {
   const [listings, setListings] = useState(null);
