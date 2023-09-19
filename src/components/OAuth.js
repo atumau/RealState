@@ -9,7 +9,6 @@ import { FcGoogle } from "react-icons/fc";
 const OAuth = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
   const onGoolgleAuthHandler = async () => {
     try {
       const auth = getAuth();

@@ -32,11 +32,10 @@ const Profile = () => {
       const listingRef = collection(db, "listings");
       const q = query(
         listingRef,
-        where("useRef", "==", auth.currentUser.uid),
+        where("userRef", "==", auth.currentUser.uid),
         orderBy("timestamp", "desc")
       );
       const querySnap = await getDocs(q);
-      console.log(querySnap);
       let listings = [];
       querySnap.forEach((doc) => {
         return listings.push({
@@ -44,7 +43,6 @@ const Profile = () => {
           data: doc.data(),
         });
       });
-      console.log(listings);
       setListings(listings);
       setLoading(false);
     };

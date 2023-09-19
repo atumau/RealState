@@ -14,7 +14,7 @@
     border-right: 5px solid #470d21;
   }
   .item-card-continer1 img {
-    height: 200px;
+    height: 100%;
     width: 100%;
     border: 5px solid rgba(0, 0, 0, 0.173);
   }
@@ -24,6 +24,9 @@
   .item-card-continer2 h2 {
     font-weight: 600;
   }
+  l-md-5.item-card-continer1 {
+    height: auto;
+}
   /* media query */
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .item-card-continer1 {

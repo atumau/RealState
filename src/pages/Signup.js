@@ -56,7 +56,7 @@ const Signup = () => {
     <Layout title="signup - house marketplace">
       <div className="row signup-container">
         <div className="col-md-6 signup-container-col-1">
-          <img src="./assets/Profile data-bro.svg" alt="welcome" />
+          <img src="./assets/signup.svg" alt="welcome" />
         </div>
         <div className="col-md-6 signup-container-col-2">
           <form onSubmit={onSubmitHndler}>
@@ -76,7 +76,7 @@ const Signup = () => {
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputEmail1" className="form-label">
-                Email address
+                Email Address
               </label>
               <input
                 type="email"
@@ -100,7 +100,7 @@ const Signup = () => {
               />
             </div>
             <div className="mb-3">
-              show password
+              Show password
               <BsFillEyeFill
                 className="text-danger ms-2  "
                 style={{ cursor: "pointer" }}

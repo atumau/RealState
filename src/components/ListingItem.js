@@ -7,7 +7,7 @@ import "../styles/listingitem.css";
 const ListingItem = ({ listing, id, onDelete, onEdit }) => {
   return (
     <div className="d-flex align-items-center justify-content-center ">
-      <div className="card category-link mb-2 item-card" style={{ width: "800px" }}>
+      <div className="card category-link mb-2 item-card" style={{ width: "900px" }}>
         <Link to={`/category/rent/${id}`}>
           <div className="row container p-2 ">
             <div className="col-md-5 item-card-continer1">
