@@ -32,10 +32,11 @@ const Profile = () => {
       const listingRef = collection(db, "listings");
       const q = query(
         listingRef,
-        where("userRef", "==", auth.currentUser.uid),
+        where("useRef", "==", auth.currentUser.uid),
         orderBy("timestamp", "desc")
       );
       const querySnap = await getDocs(q);
+      console.log(querySnap);
       let listings = [];
       querySnap.forEach((doc) => {
         return listings.push({
@@ -43,7 +44,7 @@ const Profile = () => {
           data: doc.data(),
         });
       });
-      
+      console.log(listings);
       setListings(listings);
       setLoading(false);
     };
@@ -92,10 +93,9 @@ const Profile = () => {
       // await deleteDoc(doc, (db, "listings", listingId));
       await deleteDoc(doc(db, "listings", listingId));
       const updatedListings = listings.filter(
-        listing => listing.id !== listingId
+        (listing) => listing.id !== listingId
       );
       setListings(updatedListings);
-      console.log(updatedListings)
       toast.success("Listing Deleted Successfully");
     }
   };

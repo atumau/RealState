@@ -1,8 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { doc, setDoc, getDoc } from "firebase/firestore";
-import { serverTimestamp } from "firebase/firestore";
+import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase.config";
 import { toast } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
@@ -11,7 +10,7 @@ const OAuth = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const onGoogleAuthHandler = async () => {
+  const onGoolgleAuthHandler = async () => {
     try {
       const auth = getAuth();
       const provider = new GoogleAuthProvider();
@@ -28,17 +27,17 @@ const OAuth = () => {
       }
       navigate("/");
     } catch (error) {
-      toast.error("Problem With Google Auth");
+      toast.error("Problem With Google Auth ");
     }
   };
 
   return (
     <div>
-      <h3 className="mt-4 text-center">
-        Sign{location.pathname === "/signup" ? "Up" : "In"} With
-        <button onClick={onGoogleAuthHandler}
-          style=
-          {{
+      <h3 className="mt-4 text-center ">
+        Sign {location.pathname === "/signup" ? "Up" : "in"} With
+        <button
+          onClick={onGoolgleAuthHandler}
+          style={{
             outline: "none",
             backgroundColor: "transparent",
             border: "none",
@@ -46,8 +45,8 @@ const OAuth = () => {
           }}
         >
           <span>
-          <FcGoogle />
-          oogle
+            <FcGoogle />
+            oogle
           </span>
         </button>
       </h3>
